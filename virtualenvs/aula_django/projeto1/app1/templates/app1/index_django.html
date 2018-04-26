@@ -1,0 +1,35 @@
+<!DOCTYPE html> {% load staticfiles %}
+<html>
+  <head>
+
+    <meta charset="utf-8" />
+	<title>Curitiba</title>
+	<link type="text/css" rel="stylesheet" href="{% static 'app1/css/estilo.css' %}"/>
+	<script src="{% static 'app1/js/algoritmo.js' %}" ></script>
+
+	<link type="text/css" rel="stylesheet" href="{% static 'app1/Plugins/Leaflet/leaflet.css' %}" />
+	<script src="{% static 'app1/Plugins/Leaflet/leaflet.js' %}" ></script>
+
+  <!-- INSERIR GEOJSON -->
+  <script src = "{% static 'app1/dados/geojson1.geojson' %}"></script>
+
+  <!-- INSERIR JQUERY -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+
+  <!-- Caminho toolbar -->
+  <link type="text/css" rel="stylesheet" href="{% static 'app1/Plugins/Leaflet.NavBar-master/src/Leaflet.NavBar.css' %}"/>
+  <script src = "{% static 'app1/Plugins/Leaflet.NavBar-master/src/Leaflet.NavBar.js' %}"></script>
+
+  <!-- Segundo toolbar -->
+  <!--<script src="Plugins/Leaflet.toolbar-master/dist/leaflet.toolbar.js"></script>
+  <link rel="stylesheet" href="Plugins/Leaflet.toolbar-master/dist/leaflet.toolbar.css"/> -->
+
+  </head>
+  <body>
+
+    <div id="meumapa"></div>
+
+  </body>
+
+</html>
